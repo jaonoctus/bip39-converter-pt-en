@@ -40,6 +40,22 @@ function getWordIndex(searchWord = "", wordList: string[] = []) {
       <textarea v-model="userOutput" disabled cols="30" rows="10"></textarea>
     </div>
   </main>
+  <footer>
+    <br/>
+    <hr/>
+    <p class="text-red"><br/>* AS PALAVRAS NÃO ESTÃO SENDO VALIDADAS NO MOMENTO. USE POR SUA CONTA E RISCO.</p>
+    <p class="text-bold"><br/>USO OFFLINE</p>
+    <p>Você pode (e deve) usar esta ferramenta sem estar conectado na internet.</p>
+    <p>Baixe a última versão standalone aqui: <a href="https://github.com/jaonoctus/bip39-converter-pt-en/releases" target="_blank">https://github.com/jaonoctus/bip39-converter-pt-en/releases</a></p>
+  </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+.text-red {
+  color: #FF0000;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+</style>
